@@ -1,7 +1,149 @@
 * {
     margin: 0; padding: 0;
 }
+body {
+    background-color: rgb(80, 79, 79);
+}
 
 hr {
     margin: 5rem 0;
 }
+
+.margin-side {
+    margin: 0 7rem;
+}
+
+.headernav, .footernav {
+    display: flex;
+    background-color: rgb(30, 27, 27);
+    height: 7rem;
+    align-items: center;
+
+}
+
+.headernav ul, .footernav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    list-style: none;
+}
+
+
+
+.headernav ul li a, .footernav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.headernav ul li a:visited, .footernav ul li a:visited {
+    color: white;
+}
+
+.main-h1 {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.main-text {
+
+
+}
+#circles-container {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+#circles-container a {
+    font-family: var(--quicksand);
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--white);
+    transition: transform .6s;
+}
+
+#circles-container a:hover {
+    transform: scale(1.10);
+}
+
+#circles-container a img {
+    border-radius: 50%;
+    max-width: 17rem;
+}
+
+#rainy-days,
+#blog,
+#museum {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bubble-text {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, .25);
+    border-radius: .6rem;
+    padding: .2rem;
+    color: wheat;
+}
+
+
+footer {
+    height: 10rem;
+    background-color: rgb(30, 27, 27);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footernav {
+width: 100%;
+display: flex;
+justify-content: center;
+
+
+
+}
+
+.footernav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+
+    align-items: center;
+
+}
+
+.footernav ul li {
+
+}
+
+.footernav ul li a {
+
+}
+
+. {
+
+}
+
+. {
+
+}
+
+. {
+
+}
+
