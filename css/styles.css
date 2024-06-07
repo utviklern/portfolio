@@ -77,6 +77,7 @@ hr {
 #circles-container a img {
     border-radius: 50%;
     max-width: 17rem;
+    background-color: rgb(105, 97, 113);
 }
 
 #rainy-days,
@@ -86,6 +87,7 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .bubble-text {
