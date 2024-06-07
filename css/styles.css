@@ -1,3 +1,29 @@
+.main-h2 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+
+.links {
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.main-h1 {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.main-text {
+
+}
+
 * {
     margin: 0; padding: 0;
 }
@@ -41,15 +67,7 @@ hr {
     color: white;
 }
 
-.main-h1 {
-    text-align: center;
-    margin-top: 5rem;
-}
 
-.main-text {
-
-
-}
 #circles-container {
     display: flex;
     flex-direction: row;
@@ -76,7 +94,7 @@ hr {
 
 #circles-container a img {
     border-radius: 50%;
-    max-width: 17rem;
+    max-width: 16rem;
     background-color: rgb(105, 97, 113);
 }
 
@@ -124,7 +142,6 @@ justify-content: center;
     display: flex;
     gap: 2rem;
     list-style: none;
-
     align-items: center;
 
 }
