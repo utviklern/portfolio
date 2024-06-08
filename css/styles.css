@@ -87,7 +87,7 @@ hr {
 }
 
 
-#circles-container {
+.circles-container {
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -97,7 +97,7 @@ hr {
     text-align: center;
 }
 
-#circles-container a {
+.circles-container a {
     font-family: var(--quicksand);
     font-weight: 400;
     font-size: 1.2rem;
@@ -105,19 +105,19 @@ hr {
     transition: transform .4s;
 }
 
-#circles-container a:hover {
+.circles-container a:hover {
     transform: scale(1.10);
 }
 
-#circles-container a img {
+.circles-container a img {
     border-radius: 50%;
     max-width: 17rem;
     background-color: rgb(105, 97, 113);
 }
 
-#rainy-days,
-#blog,
-#museum {
+.rainy-days,
+.blog,
+.museum {
     position: relative;
     display: flex;
     align-items: center;
@@ -167,4 +167,39 @@ width: 100%;
 
 .footernav ul li a {
 
+}
+
+
+@media screen and (max-width: 920px) {
+    .circles-container {
+            flex-direction: column;
+            row-gap: 3rem;
+    }
+}
+
+@media screen and (max-width: 820px) {
+
+    .margin-side{
+        margin: 0 4rem;
+    } 
+
+}
+
+@media screen and (max-width: 750px) {
+    .main-h1 {
+        font-size: 1.5rem;
+    }
+    .main-h2{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .circles-container a img {
+        max-width: 12rem;
+    }
+    
+    .bubble-text {
+        font-size: .8rem;
+    }
 }
