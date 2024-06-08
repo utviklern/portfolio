@@ -1,32 +1,8 @@
-.main-h2 {
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    margin-top: 3rem;
-    text-align: center;
-}
-
-
-.links {
-    font-family: "Reddit Mono", monospace;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.main-h1 {
-    text-align: center;
-    margin-top: 5rem;
-}
-
-.main-text {
-
-}
-
 * {
-    margin: 0; padding: 0;
+    margin: 0;
+    padding: 0;
 }
+
 body {
     background-color: rgb(80, 79, 79);
 }
@@ -38,6 +14,40 @@ hr {
 .margin-side {
     margin: 0 7rem;
 }
+
+.active {
+    font-weight: 600 !important;
+    color: rgb(95, 47, 193) !important;
+}
+
+.main-h2 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+
+.links, .main-text, .bubble-text {
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+.main-h1 {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.main-text {
+    font-size: 1.2rem;
+}
+
 
 .headernav, .footernav {
     display: flex;
@@ -55,13 +65,22 @@ hr {
     list-style: none;
 }
 
+.headernav,
+.footernav {
 
+}
 
 .headernav ul li a, .footernav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.3rem;
+    transition: .4s;
 }
+.headernav a:hover, .footernav a:hover {
+    transform: scale(1.2);
+    display: block;
+}
+
 
 .headernav ul li a:visited, .footernav ul li a:visited {
     color: white;
@@ -83,9 +102,7 @@ hr {
     font-weight: 400;
     font-size: 1.2rem;
     text-decoration: none;
-    list-style-type: none;
-    color: var(--white);
-    transition: transform .6s;
+    transition: transform .4s;
 }
 
 #circles-container a:hover {
@@ -94,7 +111,7 @@ hr {
 
 #circles-container a img {
     border-radius: 50%;
-    max-width: 16rem;
+    max-width: 17rem;
     background-color: rgb(105, 97, 113);
 }
 
@@ -118,24 +135,21 @@ hr {
     border-radius: .6rem;
     padding: .2rem;
     color: wheat;
+    font-size: 1rem;
 }
 
 
 footer {
-    height: 10rem;
+    height: 15rem;
     background-color: rgb(30, 27, 27);
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .footernav {
 width: 100%;
-display: flex;
-justify-content: center;
-
-
-
 }
 
 .footernav ul {
@@ -143,6 +157,7 @@ justify-content: center;
     gap: 2rem;
     list-style: none;
     align-items: center;
+    flex-direction: column;
 
 }
 
@@ -153,16 +168,3 @@ justify-content: center;
 .footernav ul li a {
 
 }
-
-. {
-
-}
-
-. {
-
-}
-
-. {
-
-}
-
