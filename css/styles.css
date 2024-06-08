@@ -4,11 +4,14 @@
 }
 
 body {
-    background-color: rgb(80, 79, 79);
+    /* background-color: rgb(80, 79, 79); */
+    background-color: rgb(101, 93, 106);
 }
 
 hr {
     margin: 5rem 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 .margin-side {
@@ -20,7 +23,7 @@ hr {
     color: rgb(95, 47, 193) !important;
 }
 
-.main-h2 {
+.main-h2, .content-h2 {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -29,6 +32,20 @@ hr {
     text-align: center;
 }
 
+.content-h2{
+    margin-bottom: 5rem;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+}
+
+.border-line {
+
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+
+    
+}
 
 .links, .main-text, .bubble-text {
     font-family: "Reddit Mono", monospace;
@@ -42,10 +59,17 @@ hr {
 .main-h1 {
     text-align: center;
     margin-top: 5rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .main-text {
     font-size: 1.2rem;
+    padding: 50px;
+    max-width: 67rem;
+    margin: 0 auto;
 }
 
 
@@ -75,6 +99,9 @@ hr {
     text-decoration: none;
     font-size: 1.3rem;
     transition: .4s;
+    width: 10rem;
+    display: block;
+    text-align: center;
 }
 .headernav a:hover, .footernav a:hover {
     transform: scale(1.2);
@@ -112,7 +139,8 @@ hr {
 .circles-container a img {
     border-radius: 50%;
     max-width: 17rem;
-    background-color: rgb(105, 97, 113);
+    background-color: rgba(124, 112, 136, 0.493);
+    box-shadow: 0px 0px 21px 5px rgba(0, 0, 0, 0.38);
 }
 
 .rainy-days,
@@ -122,6 +150,7 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
+
 
 }
 
@@ -169,6 +198,14 @@ width: 100%;
 
 }
 
+.content-img {
+    max-width: 70%;
+    margin: 0 auto 6cap auto;
+    display: block;
+    border-radius: 8px;
+
+}
+
 
 @media screen and (max-width: 920px) {
     .circles-container {
@@ -183,6 +220,10 @@ width: 100%;
         margin: 0 4rem;
     } 
 
+    .headernav ul li a,
+    .footernav ul li a {
+        width: auto;
+    }
 }
 
 @media screen and (max-width: 750px) {
