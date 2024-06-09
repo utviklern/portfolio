@@ -20,7 +20,7 @@ hr {
 
 .active {
     font-weight: 600 !important;
-    color: rgb(95, 47, 193) !important;
+    color: rgb(158, 147, 182) !important;
 }
 
 .main-h2, .content-h2, .card-h2 {
@@ -29,6 +29,7 @@ hr {
     font-weight: 500;
     font-style: normal;
     text-align: center;
+    color: wheat;
 }
 
 .main-h2,
@@ -63,6 +64,7 @@ hr {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
+    color: wheat;
     font-style: normal;
 }
 
@@ -71,6 +73,7 @@ hr {
     padding: 50px;
     max-width: 67rem;
     margin: 0 auto;
+    color: wheat;
 }
 
 header {
@@ -139,11 +142,12 @@ header {
 .cards{
     display: flex;
     align-items: center;
-    /* flex-direction: column; */
-    padding: 10rem ;
+    justify-content: center;
+    padding: 5rem ;
     flex-wrap: wrap;
     column-gap: 5rem;
     row-gap: 5rem;
+
 }
 
 .card {
@@ -162,12 +166,24 @@ header {
 .card-text {
     font-size: 1.2rem;
     /* padding: 0 2rem 2rem 2rem; */
+        color: wheat;
 }
 
 .card-links {
     display: flex;
     justify-content: space-between;
     /* padding: 0 2rem; */
+}
+
+
+
+.card-links a{
+    color: aquamarine;
+    font-family: "Playfair Display", serif;
+}
+
+.card-links a:visited {
+    color: rgb(219, 219, 219);
 }
 
 .card-img{
@@ -186,6 +202,11 @@ header {
     align-items: center;
     color: white;
     text-align: center;
+    padding: 5rem 0;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
 }
 
 .circles-container a {
