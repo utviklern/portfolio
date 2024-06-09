@@ -5,6 +5,7 @@
 
 body {
     background-color: rgb(101, 93, 106);
+    margin-top: 10rem;
 }
 
 hr {
@@ -22,13 +23,17 @@ hr {
     color: rgb(95, 47, 193) !important;
 }
 
-.main-h2, .content-h2 {
+.main-h2, .content-h2, .card-h2 {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    margin-top: 3rem;
     text-align: center;
+}
+
+.main-h2,
+.content-h2{
+    margin-top: 3rem;
 }
 
 .content-h2{
@@ -43,14 +48,14 @@ hr {
     text-decoration-thickness: 2px;
 }
 
-.links, .main-text, .bubble-text {
+
+
+.links, .main-text, .bubble-text, .card-text {
     font-family: "Reddit Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
-
-
 
 .main-h1 {
     text-align: center;
@@ -68,6 +73,23 @@ hr {
     margin: 0 auto;
 }
 
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+.headernav{
+    transition: opacity 0.6s, transform 0.6s;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.headernav.hidden {
+    opacity: 0;
+    transform: translateY(-100%);
+}
 
 .headernav, .footernav {
     display: flex;
@@ -85,10 +107,7 @@ hr {
     list-style: none;
 }
 
-.headernav,
-.footernav {
 
-}
 
 .headernav ul li a, .footernav ul li a {
     color: white;
@@ -107,6 +126,46 @@ hr {
 
 .headernav ul li a:visited, .footernav ul li a:visited {
     color: white;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+    padding: 10rem ;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid wheat;
+    background-color: rgba(137, 129, 129, 0.436);
+    max-width: 30rem;
+    border-radius: 8px;
+    padding: 2rem;
+        box-shadow: 0px 0px 21px 5px rgba(0, 0, 0, 0.28);
+}
+
+
+.card-text {
+    font-size: 1.2rem;
+    /* padding: 0 2rem 2rem 2rem; */
+}
+
+.card-links {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0 2rem; */
+}
+
+.card-img{
+    width: 100%;
+    margin: 2rem auto;
+    display: block;
+    border-radius: 8px;
 }
 
 
